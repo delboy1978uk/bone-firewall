@@ -6,6 +6,7 @@ namespace Bone\Firewall\Firewall;
 
 use Barnacle\Container;
 use Barnacle\RegistrationInterface;
+use League\Route\Router;
 
 class FirewallPackage implements RegistrationInterface
 {
@@ -14,6 +15,9 @@ class FirewallPackage implements RegistrationInterface
      */
     public function addToContainer(Container $c)
     {
+        /** @var Router $router */
+        $router = $c->get(Router::class);
+//        $router;
     }
 
     /**
