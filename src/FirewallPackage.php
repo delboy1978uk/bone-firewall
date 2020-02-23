@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Bone\Firewall\Firewall;
+namespace Bone\Firewall;
 
 use Barnacle\Container;
 use Barnacle\RegistrationInterface;
-use League\Route\Router;
+use Bone\Mvc\Router;
 
 class FirewallPackage implements RegistrationInterface
 {
@@ -17,7 +17,8 @@ class FirewallPackage implements RegistrationInterface
     {
         /** @var Router $router */
         $router = $c->get(Router::class);
-//        $router;
+        $firewall = new RouteFirewall($router);
+        $c[RouteFirewall::class] = $firewall;
     }
 
     /**

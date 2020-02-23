@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Bone\\Firewall\\Firewall\\\\": "src\/"
+            "Bone\\Firewall\\": "src\/"
         }
     }
 }
