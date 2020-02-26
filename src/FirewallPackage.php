@@ -15,10 +15,7 @@ class FirewallPackage implements RegistrationInterface
      */
     public function addToContainer(Container $c)
     {
-        /** @var Router $router */
-        $router = $c->get(Router::class);
-        $blocked = $c->has('blockedRoutes') ? $c->get('blockedRoutes') : [];
-        $firewall = new RouteFirewall($router, $blocked);
+        $firewall = new RouteFirewall($c);
         $c[RouteFirewall::class] = $firewall;
     }
 
