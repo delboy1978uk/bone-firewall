@@ -3,7 +3,7 @@
 namespace Bone\Firewall;
 
 use Barnacle\Container;
-use Bone\Mvc\Router;
+use Bone\Router\Router;
 use League\Route\Route;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

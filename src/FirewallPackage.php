@@ -6,7 +6,7 @@ namespace Bone\Firewall;
 
 use Barnacle\Container;
 use Barnacle\RegistrationInterface;
-use Bone\Mvc\Router;
+use Bone\Router\Router;
 
 class FirewallPackage implements RegistrationInterface
 {
