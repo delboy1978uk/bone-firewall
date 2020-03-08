@@ -1,4 +1,7 @@
 # firewall
+[![Latest Stable Version](https://poser.pugx.org/delboy1978uk/bone-fireall/v/stable)](https://packagist.org/packages/delboy1978uk/bone-fireall) [![Total Downloads](https://poser.pugx.org/delboy1978uk/bone/downloads)](https://packagist.org/packages/delboy1978uk/bone) [![Latest Unstable Version](https://poser.pugx.org/delboy1978uk/bone-fireall/v/unstable)](https://packagist.org/packages/delboy1978uk/bone-fireall) [![License](https://poser.pugx.org/delboy1978uk/bone-fireall/license)](https://packagist.org/packages/delboy1978uk/bone-fireall)<br />
+[![Build Status](https://travis-ci.org/delboy1978uk/bone-fireall.png?branch=master)](https://travis-ci.org/delboy1978uk/bone-fireall) [![Code Coverage](https://scrutinizer-ci.com/g/delboy1978uk/bone-fireall/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/delboy1978uk/bone-fireall/?branch=master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/delboy1978uk/bone-fireall/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/delboy1978uk/bone-fireall/?branch=master)<br />
+
 Firewall package for controlling Bone Framework vendor package routes.
 ## installation
 Use Composer
