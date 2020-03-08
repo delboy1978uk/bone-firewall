@@ -1,0 +1,136 @@
+<?php
+$coverage = new SebastianBergmann\CodeCoverage\CodeCoverage;
+$coverage->setData(array (
+  '/var/www/html/vendor/delboy1978uk/bone-firewall/src/RouteFirewall.php' => 
+  array (
+    34 => 
+    array (
+      0 => 'Barnacle\\Tests\\FirewallTest::testFirewall',
+    ),
+    35 => 
+    array (
+      0 => 'Barnacle\\Tests\\FirewallTest::testFirewall',
+    ),
+    36 => 
+    array (
+      0 => 'Barnacle\\Tests\\FirewallTest::testFirewall',
+    ),
+    37 => 
+    array (
+      0 => 'Barnacle\\Tests\\FirewallTest::testFirewall',
+    ),
+    38 => 
+    array (
+      0 => 'Barnacle\\Tests\\FirewallTest::testFirewall',
+    ),
+    39 => 
+    array (
+      0 => 'Barnacle\\Tests\\FirewallTest::testFirewall',
+    ),
+    40 => 
+    array (
+      0 => 'Barnacle\\Tests\\FirewallTest::testFirewall',
+    ),
+    41 => 
+    array (
+      0 => 'Barnacle\\Tests\\FirewallTest::testFirewall',
+    ),
+    50 => 
+    array (
+      0 => 'Barnacle\\Tests\\FirewallTest::testFirewall',
+    ),
+    53 => 
+    array (
+      0 => 'Barnacle\\Tests\\FirewallTest::testFirewall',
+    ),
+    54 => 
+    array (
+    ),
+    56 => 
+    array (
+    ),
+    57 => 
+    array (
+    ),
+    58 => 
+    array (
+    ),
+    61 => 
+    array (
+    ),
+    62 => 
+    array (
+    ),
+    66 => 
+    array (
+      0 => 'Barnacle\\Tests\\FirewallTest::testFirewall',
+    ),
+    67 => NULL,
+    71 => 
+    array (
+    ),
+    73 => 
+    array (
+    ),
+    74 => 
+    array (
+    ),
+    75 => 
+    array (
+    ),
+    78 => 
+    array (
+    ),
+    81 => 
+    array (
+    ),
+    89 => 
+    array (
+    ),
+    90 => 
+    array (
+    ),
+    91 => 
+    array (
+    ),
+    92 => 
+    array (
+    ),
+    93 => 
+    array (
+    ),
+    95 => 
+    array (
+    ),
+  ),
+  '/var/www/html/vendor/delboy1978uk/bone-firewall/src/FirewallPackage.php' => 
+  array (
+    15 => 
+    array (
+      0 => 'Barnacle\\Tests\\FirewallTest::testFirewall',
+    ),
+    16 => 
+    array (
+      0 => 'Barnacle\\Tests\\FirewallTest::testFirewall',
+    ),
+    17 => 
+    array (
+      0 => 'Barnacle\\Tests\\FirewallTest::testFirewall',
+    ),
+  ),
+));
+$coverage->setTests(array (
+  'Barnacle\\Tests\\FirewallTest::testFirewall' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+));
+
+$filter = $coverage->filter();
+$filter->setWhitelistedFiles(array (
+  '/var/www/html/vendor/delboy1978uk/bone-firewall/src/FirewallPackage.php' => true,
+  '/var/www/html/vendor/delboy1978uk/bone-firewall/src/RouteFirewall.php' => true,
+));
+
+return $coverage;
