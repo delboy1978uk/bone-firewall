@@ -1,4 +1,4 @@
-# firewall
+# bone-firewall
 [![Latest Stable Version](https://poser.pugx.org/delboy1978uk/bone-firewall/v/stable)](https://packagist.org/packages/delboy1978uk/bone-firewall) [![Total Downloads](https://poser.pugx.org/delboy1978uk/bone/downloads)](https://packagist.org/packages/delboy1978uk/bone) [![Latest Unstable Version](https://poser.pugx.org/delboy1978uk/bone-firewall/v/unstable)](https://packagist.org/packages/delboy1978uk/bone-firewall) [![License](https://poser.pugx.org/delboy1978uk/bone-firewall/license)](https://packagist.org/packages/delboy1978uk/bone-firewall)<br />
 [![Build Status](https://travis-ci.org/delboy1978uk/bone-firewall.png?branch=master)](https://travis-ci.org/delboy1978uk/bone-firewall) [![Code Coverage](https://scrutinizer-ci.com/g/delboy1978uk/bone-firewall/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/delboy1978uk/bone-firewall/?branch=master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/delboy1978uk/bone-firewall/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/delboy1978uk/bone-firewall/?branch=master)<br />
 
