@@ -13,5 +13,4 @@ class FakeRequestHandler implements RequestHandlerInterface
     {
         return new HtmlResponse('hello');
     }
-
 }
