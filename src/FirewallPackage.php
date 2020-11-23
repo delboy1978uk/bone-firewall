@@ -4,27 +4,37 @@ namespace Bone\Firewall;
 
 use Barnacle\Container;
 use Barnacle\RegistrationInterface;
-use Bone\Http\Middleware\Stack;
-use Bone\Http\MiddlewareAwareInterface;
+use Bone\Http\GlobalMiddlewareRegistrationInterface;
 
-class FirewallPackage implements RegistrationInterface, MiddlewareAwareInterface
+class FirewallPackage implements RegistrationInterface, GlobalMiddlewareRegistrationInterface
 {
     /**
      * @param Container $c
      */
     public function addToContainer(Container $c)
     {
-        $firewall = new RouteFirewall($c);
-        $c[RouteFirewall::class] = $firewall;
+
     }
 
     /**
-     * @param Stack $stack
-     * @param Container $container
+     * @param Container $c
+     * @return array
      */
-    public function addMiddleware(Stack $stack, Container $c): void
+    public function getMiddleware(Container $c): array
     {
-        $firewall = $c->get(RouteFirewall::class);
-        $stack->addMiddleWare($firewall);
+        return [
+            new RouteFirewall($c),
+        ];
+    }
+
+    /**
+     * @param Container $c
+     * @return array
+     */
+    public function getGlobalMiddleware(Container $c): array
+    {
+        return [
+            RouteFirewall::class
+        ];
     }
 }
