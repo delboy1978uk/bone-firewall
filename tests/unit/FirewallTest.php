@@ -38,8 +38,8 @@ class FirewallTest extends Test
     public function testPackage()
     {
         $package = new FirewallPackage();
-        $package->addToContainer($this->container);
-        $this->assertTrue($this->container->has(RouteFirewall::class));
+        $middleware = $package->getMiddleware($this->container);
+        $this->assertCount(1, $middleware);
     }
 
     public function testFirewall()
