@@ -1,6 +1,6 @@
 <?php
 
-namespace Barnacle\Tests;
+namespace Bone\Test;
 
 use Barnacle\Container;
 use Bone\Firewall\FirewallPackage;
