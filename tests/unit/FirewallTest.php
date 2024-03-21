@@ -9,12 +9,12 @@ use Bone\Router\Router;
 use Bone\Test\FakeController;
 use Bone\Test\FakeMiddleware;
 use Bone\Test\FakeRequestHandler;
-use Codeception\TestCase\Test;
+use Codeception\Test\Unit;
 use League\Route\Route;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-class FirewallTest extends Test
+class FirewallTest extends Unit
 {
     /** @var Container */
     protected $container;
