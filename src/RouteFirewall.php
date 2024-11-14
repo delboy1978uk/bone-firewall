@@ -52,23 +52,26 @@ class RouteFirewall implements MiddlewareInterface
         /** @var Route $route */
         foreach ($routes as $route) {
             $path = $route->getPath();
+            $method = $route->getMethod();
 
-            if (in_array($path, $this->blockedRoutes)) {
+            if (in_array($path, $this->blockedRoutes)
+                || (isset($this->blockedRoutes[$method]) && in_array($path, $this->blockedRoutes[$method]))) {
                 $this->router->removeRoute($route);
                 break;
             }
 
-            if (array_key_exists($path, $this->middlewares)) {
-                $this->handleMiddleware($path, $route);
+            if (array_key_exists($path, $this->middlewares)
+                || (isset($this->middlewares[$method]) && array_key_exists($path, $this->middlewares[$method]))) {
+                $this->handleMiddleware($path, $route, $method);
             }
         }
 
         return $handler->handle($request);
     }
 
-    private function handleMiddleware(string $path, Route $route)
+    private function handleMiddleware(string $path, Route $route, string $method)
     {
-        $routeMiddleware = $this->middlewares[$path];
+        $routeMiddleware = $this->middlewares[$path] ?: $this->middlewares[$method];
 
         if (is_array($routeMiddleware)) {
             foreach ($routeMiddleware as $middleware) {
